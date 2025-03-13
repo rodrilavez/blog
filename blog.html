@@ -3,72 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenna's Blog</title>
+    <title>Lenna's Gothic Blog</title>
     <style>
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+        @keyframes neonGlow {
+            0% { text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000; }
+            50% { text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; }
+            100% { text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000; }
+        }
         body {
-            background: radial-gradient(circle, #000033, #000000);
-            color: #fff;
+            background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3Z4Ynp4OGZ6YzVyazhmdGJ2cGg5d2JidDZkc2ppNG9vaHlhcjZvNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/e1gWZgp04X6RJvR3tI/giphy.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
             font-family: 'Courier New', monospace;
             text-align: center;
             margin: 20px;
+            animation: flicker 2s infinite;
         }
         .container {
             max-width: 800px;
             margin: auto;
-            border: 4px double #ff00ff;
+            border: 4px double #ff0000;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            box-shadow: 0px 0px 20px #ff00ff;
+            background: rgba(0, 0, 0, 0.9);
+            box-shadow: 0px 0px 20px #ff0000;
+        }
+        h1, h2 {
+            animation: neonGlow 2s infinite alternate;
         }
         a {
-            color: #00ffff;
+            color: #ff0000;
             text-decoration: none;
             font-weight: bold;
         }
         a:hover {
-            color: #ff00ff;
-            text-shadow: 0px 0px 10px #ff00ff;
+            color: #ffffff;
+            text-shadow: 0px 0px 10px #ffffff;
         }
         .image-style {
             width: 100%;
             max-width: 400px;
             display: block;
             margin: 10px auto;
-            border: 2px solid #ff00ff;
-            box-shadow: 0px 0px 10px #ff00ff;
+            border: 2px solid #ff0000;
+            box-shadow: 0px 0px 10px #ff0000;
         }
         .footer {
             margin-top: 20px;
-            color: #888;
+            color: #aaaaaa;
             font-size: 14px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Lenna's Blog</h1>
+        <h1>Lenna's Gothic Blog</h1>
         <nav>
             <a href="index.html">Home</a> | <a href="music.html">Music</a> | <a href="books.html">Books</a> | <a href="movies.html">Movies</a> | <a href="about.html">About</a>
         </nav>
         <section>
-            <h2>Latest Posts</h2>
+            <h2>Latest Dark Entries</h2>
             <article>
-                <h3>🚀 Exploring the neon lights of cyberpunk culture...</h3>
-                <img src="images/cyberpunk.jpg" alt="Cyberpunk city lights" class="image-style">
-                <p>Cyberpunk aesthetics have defined a generation of sci-fi lovers...</p>
+                <h3>🦇 The Haunting Glow of Cyberpunk Nights...</h3>
+                <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGc3eXdpdHFlcng2amRjdXF5MHQ0Zm41YzhpNjY0amI5NTgwcXlnYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zMKofmJMrdZZD9uOBB/giphy.gif" alt="Cyberpunk gothic city" class="image-style">
+                <p>Neon rain, shadowy figures, and the eerie hum of technology...</p>
             </article>
             <article>
-                <h3>💾 Why 80s tech aesthetics still influence us today...</h3>
-                <img src="images/retro-tech.jpg" alt="Retro computer setup" class="image-style">
-                <p>The charm of CRT monitors, neon lights, and floppy disks remains...</p>
+                <h3>💀 The Ghosts of Forgotten Technology...</h3>
+                <img src="https://media.giphy.com/media/wgfEUyY3RVt6mbdA3q/giphy.gif?cid=790b7611bff72c4j7a97pk9fh8hcakyp0dkrv3p83whhuzim&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Abandoned tech ruins" class="image-style">
+                <p>The haunting presence of outdated devices in a neon-lit world...</p>
             </article>
             <article>
-                <h3>🌐 The intersection of hacking, coding, and retro vibes...</h3>
-                <img src="images/hacker.jpg" alt="Hacker working on code" class="image-style">
-                <p>From the early days of hacking to today's cyberpunk renaissance...</p>
+                <h3>🌑 Hacking into the Abyss...</h3>
+                <img src="https://media.giphy.com/media/Ozp8Dl8FoC4hy/giphy.gif?cid=ecf05e47pg8p36f0332g51ih18v5cpjdutuaat4vjdlo768l&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Hacker in the shadows" class="image-style">
+                <p>Where the digital meets the supernatural, and secrets lurk in the dark...</p>
             </article>
         </section>
-        <div class="footer">© 2025 Lenna's Blog - Stay retro!</div>
+        <div class="footer">© 2025 Lenna's Gothic Blog - Embrace the darkness...</div>
     </div>
 </body>
 </html>

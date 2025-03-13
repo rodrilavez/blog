@@ -3,73 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenna's Music</title>
+    <title>Lenna's Dark Soundscape</title>
     <style>
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+        @keyframes neonGlow {
+            0% { text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000; }
+            50% { text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; }
+            100% { text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000; }
+        }
         body {
-            background: radial-gradient(circle, #000033, #000000);
-            color: #fff;
+            background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3Z4Ynp4OGZ6YzVyazhmdGJ2cGg5d2JidDZkc2ppNG9vaHlhcjZvNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/e1gWZgp04X6RJvR3tI/giphy.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
             font-family: 'Courier New', monospace;
             text-align: center;
             margin: 20px;
+            animation: flicker 2s infinite;
         }
         .container {
             max-width: 800px;
             margin: auto;
-            border: 4px double #ff00ff;
+            border: 4px double #ff0000;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            box-shadow: 0px 0px 20px #ff00ff;
+            background: rgba(0, 0, 0, 0.9);
+            box-shadow: 0px 0px 20px #ff0000;
+        }
+        h1, h2 {
+            animation: neonGlow 2s infinite alternate;
         }
         a {
-            color: #00ffff;
+            color: #ff0000;
             text-decoration: none;
             font-weight: bold;
         }
         a:hover {
-            color: #ff00ff;
-            text-shadow: 0px 0px 10px #ff00ff;
+            color: #ffffff;
+            text-shadow: 0px 0px 10px #ffffff;
         }
         .image-style {
             width: 100%;
             max-width: 400px;
             display: block;
             margin: 10px auto;
-            border: 2px solid #ff00ff;
-            box-shadow: 0px 0px 10px #ff00ff;
+            border: 2px solid #ff0000;
+            box-shadow: 0px 0px 10px #ff0000;
         }
         .footer {
             margin-top: 20px;
-            color: #888;
+            color: #aaaaaa;
             font-size: 14px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Lenna's Music</h1>
+        <h1>Lenna's Dark Soundscape</h1>
         <nav>
             <a href="index.html">Home</a> | <a href="blog.html">Blog</a> | <a href="books.html">Books</a> | <a href="movies.html">Movies</a> | <a href="about.html">About</a>
         </nav>
         <section>
-            <h2>Favorite Synthwave & Retro Tracks</h2>
+            <h2>Gothic & Darkwave Anthems</h2>
             <article>
-                <h3>🎵 Depeche Mode - Enjoy the Silence</h3>
-                <img src="images/depeche-mode.jpg" alt="Depeche Mode album cover" class="image-style">
+                <h3>🦇 Bauhaus - Bela Lugosi's Dead</h3>
+                <img src="https://media.giphy.com/media/dnYKFkAFX5QGqS7Nh7/giphy.gif?cid=ecf05e47t1ujtyvodz7vrcb5lgc7mf4f9duop8wf4wzqn2cq&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Bauhaus album cover" class="image-style">
             </article>
             <article>
-                <h3>🎵 Kavinsky - Nightcall</h3>
-                <img src="images/kavinsky-nightcall.jpg" alt="Kavinsky album cover" class="image-style">
+                <h3>💀 The Sisters of Mercy - Lucretia My Reflection</h3>
+                <img src="https://media.giphy.com/media/1aL3rLKczb32w/giphy.gif?cid=790b7611b72071wiyrt08q71zxtqnqyp15pk354ri35muhsp&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="The Sisters of Mercy album cover" class="image-style">
             </article>
             <article>
-                <h3>🎵 The Midnight - Sunset</h3>
-                <img src="images/the-midnight.jpg" alt="The Midnight album cover" class="image-style">
+                <h3>🌑 Siouxsie and the Banshees - Cities in Dust</h3>
+                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2FtdGVua2Y4cmwwazUzMmtuczZ3a3hoZDV6MDJtMDRzdHIxZDlkcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ozp8Dl8FoC4hy/giphy.gif" alt="Siouxsie and the Banshees album cover" class="image-style">
             </article>
             <article>
-                <h3>🎵 Electric Youth - A Real Hero</h3>
-                <img src="images/electric-youth.jpg" alt="Electric Youth album cover" class="image-style">
+                <h3>🔮 She Past Away - Kasvetli Kutlama</h3>
+                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExazBsM2hteGpodHhhdGw2dDM4NHFjc20wajkxdWg1anI5NmN0c3g1YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YDyqbSE7XmfjbmVlwm/giphy.gif" alt="She Past Away album cover" class="image-style">
             </article>
         </section>
-        <div class="footer">© 2025 Lenna's Music - Stay in the groove!</div>
+        <div class="footer">© 2025 Lenna's Dark Soundscape - Let the darkness play...</div>
     </div>
 </body>
 </html>

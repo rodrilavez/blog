@@ -3,73 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenna's Favorite Movies</title>
+    <title>Lenna's Dark Cinema</title>
     <style>
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+        @keyframes neonGlow {
+            0% { text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000; }
+            50% { text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; }
+            100% { text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000; }
+        }
         body {
-            background: radial-gradient(circle, #000033, #000000);
-            color: #fff;
+            background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3Z4Ynp4OGZ6YzVyazhmdGJ2cGg5d2JidDZkc2ppNG9vaHlhcjZvNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/e1gWZgp04X6RJvR3tI/giphy.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
             font-family: 'Courier New', monospace;
             text-align: center;
             margin: 20px;
+            animation: flicker 2s infinite;
         }
         .container {
             max-width: 800px;
             margin: auto;
-            border: 4px double #ff00ff;
+            border: 4px double #ff0000;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            box-shadow: 0px 0px 20px #ff00ff;
+            background: rgba(0, 0, 0, 0.9);
+            box-shadow: 0px 0px 20px #ff0000;
+        }
+        h1, h2 {
+            animation: neonGlow 2s infinite alternate;
         }
         a {
-            color: #00ffff;
+            color: #ff0000;
             text-decoration: none;
             font-weight: bold;
         }
         a:hover {
-            color: #ff00ff;
-            text-shadow: 0px 0px 10px #ff00ff;
+            color: #ffffff;
+            text-shadow: 0px 0px 10px #ffffff;
         }
         .image-style {
             width: 100%;
             max-width: 300px;
             display: block;
             margin: 10px auto;
-            border: 2px solid #ff00ff;
-            box-shadow: 0px 0px 10px #ff00ff;
+            border: 2px solid #ff0000;
+            box-shadow: 0px 0px 10px #ff0000;
         }
         .footer {
             margin-top: 20px;
-            color: #888;
+            color: #aaaaaa;
             font-size: 14px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Lenna's Favorite Movies</h1>
+        <h1>Lenna's Dark Cinema</h1>
         <nav>
             <a href="index.html">Home</a> | <a href="blog.html">Blog</a> | <a href="music.html">Music</a> | <a href="books.html">Books</a> | <a href="about.html">About</a>
         </nav>
         <section>
-            <h2>Retro & Cyberpunk Classics</h2>
+            <h2>Gothic & Horror Classics</h2>
             <article>
-                <h3>🎬 Blade Runner (1982)</h3>
-                <img src="images/blade-runner.jpg" alt="Blade Runner movie poster" class="image-style">
+                <h3>🦇 Nosferatu (1922)</h3>
+                <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2Z4d21jcmhjcG92OGl5dGJrMmtiandyY2ZjM3ZwcjBkZzc3c21zMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11PyEGIyET0NSU/giphy.gif" alt="Nosferatu movie poster" class="image-style">
             </article>
             <article>
-                <h3>🎬 Tron (1982)</h3>
-                <img src="images/tron.jpg" alt="Tron movie poster" class="image-style">
+                <h3>💀 The Crow (1994)</h3>
+                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3drbWQxYjIyeTNvNjVmdXRzMGllMHdrZmg1MDYyNjJuejFyOXY0OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11eNXNhbGVcv2s1Tjo/giphy.gif" alt="The Crow movie poster" class="image-style">
             </article>
             <article>
-                <h3>🎬 The Matrix (1999)</h3>
-                <img src="images/matrix.jpg" alt="The Matrix movie poster" class="image-style">
+                <h3>🕷 Bram Stoker's Dracula (1992)</h3>
+                <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTZrOW92cWttbTdtcmcyYmw0NjRkaTVmNW16ZXhlNmFidjMxOWVnMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/24GU6oBiQp99S/giphy.gif" alt="Bram Stoker's Dracula movie poster" class="image-style">
             </article>
             <article>
-                <h3>🎬 Ghost in the Shell (1995)</h3>
-                <img src="images/ghost-in-the-shell.jpg" alt="Ghost in the Shell movie poster" class="image-style">
+                <h3>🔪 Suspiria (1977)</h3>
+                <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2R2M2J5c2ljaGcwdWJybHU5bDdyNGIzdG9mcWVteWJmeDVxcWJrZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dQwUSUR7fC7Is/giphy.gif" alt="Suspiria movie poster" class="image-style">
             </article>
         </section>
-        <div class="footer">© 2025 Lenna's Movies - Stay cinematic!</div>
+        <div class="footer">© 2025 Lenna's Dark Cinema - Enter the darkness...</div>
     </div>
 </body>
 </html>

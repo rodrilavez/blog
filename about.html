@@ -5,41 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Lenna</title>
     <style>
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+        @keyframes neonGlow {
+            0% { text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000; }
+            50% { text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; }
+            100% { text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000; }
+        }
         body {
-            background: radial-gradient(circle, #000033, #000000);
-            color: #fff;
+            background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3Z4Ynp4OGZ6YzVyazhmdGJ2cGg5d2JidDZkc2ppNG9vaHlhcjZvNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/e1gWZgp04X6RJvR3tI/giphy.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
             font-family: 'Courier New', monospace;
             text-align: center;
             margin: 20px;
+            animation: flicker 2s infinite;
         }
         .container {
             max-width: 800px;
             margin: auto;
-            border: 4px double #ff00ff;
+            border: 4px double #ff0000;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            box-shadow: 0px 0px 20px #ff00ff;
+            background: rgba(0, 0, 0, 0.9);
+            box-shadow: 0px 0px 20px #ff0000;
+        }
+        h1, h2 {
+            animation: neonGlow 2s infinite alternate;
         }
         a {
-            color: #00ffff;
+            color: #ff0000;
             text-decoration: none;
             font-weight: bold;
         }
         a:hover {
-            color: #ff00ff;
-            text-shadow: 0px 0px 10px #ff00ff;
+            color: #ffffff;
+            text-shadow: 0px 0px 10px #ffffff;
         }
         .image-style {
             width: 100%;
             max-width: 300px;
             display: block;
             margin: 10px auto;
-            border: 2px solid #ff00ff;
-            box-shadow: 0px 0px 10px #ff00ff;
+            border: 2px solid #ff0000;
+            box-shadow: 0px 0px 10px #ff0000;
         }
         .footer {
             margin-top: 20px;
-            color: #888;
+            color: #aaaaaa;
             font-size: 14px;
         }
     </style>
@@ -52,10 +67,10 @@
         </nav>
         <section>
             <h2>Who is Lenna?</h2>
-            <img src="images/lenna.jpg" alt="Lenna's Portrait" class="image-style">
-            <p>A retro-futurist exploring the neon-lit corners of cyberpunk culture. Passionate about music, books, films, and all things 80s-inspired.</p>
+            <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExejlhdDkzdWhwOWVkeGxiZXFlMW5id3RkcHdyNDM2ZzV0a2kzbDJzZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bt0S5w3TUnRovWlx6z/giphy.gif" alt="Lenna's Portrait" class="image-style">
+            <p>A dark visionary exploring the neon-lit shadows of cyberpunk horror and gothic aesthetics. Passionate about eerie music, macabre literature, and haunting visuals.</p>
         </section>
-        <div class="footer">© 2025 Lenna's Retro Blog - Stay awesome!</div>
+        <div class="footer">© 2025 Lenna's Gothic Retro Blog - Embrace the darkness...</div>
     </div>
 </body>
 </html>

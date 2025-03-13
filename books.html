@@ -3,73 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenna's Books</title>
+    <title>Lenna's Gothic Library</title>
     <style>
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+        @keyframes neonGlow {
+            0% { text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000; }
+            50% { text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; }
+            100% { text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000; }
+        }
         body {
-            background: radial-gradient(circle, #000033, #000000);
-            color: #fff;
+            background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3Z4Ynp4OGZ6YzVyazhmdGJ2cGg5d2JidDZkc2ppNG9vaHlhcjZvNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/e1gWZgp04X6RJvR3tI/giphy.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
             font-family: 'Courier New', monospace;
             text-align: center;
             margin: 20px;
+            animation: flicker 2s infinite;
         }
         .container {
             max-width: 800px;
             margin: auto;
-            border: 4px double #ff00ff;
+            border: 4px double #ff0000;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            box-shadow: 0px 0px 20px #ff00ff;
+            background: rgba(0, 0, 0, 0.9);
+            box-shadow: 0px 0px 20px #ff0000;
+        }
+        h1, h2 {
+            animation: neonGlow 2s infinite alternate;
         }
         a {
-            color: #00ffff;
+            color: #ff0000;
             text-decoration: none;
             font-weight: bold;
         }
         a:hover {
-            color: #ff00ff;
-            text-shadow: 0px 0px 10px #ff00ff;
+            color: #ffffff;
+            text-shadow: 0px 0px 10px #ffffff;
         }
         .image-style {
             width: 100%;
             max-width: 300px;
             display: block;
             margin: 10px auto;
-            border: 2px solid #ff00ff;
-            box-shadow: 0px 0px 10px #ff00ff;
+            border: 2px solid #ff0000;
+            box-shadow: 0px 0px 10px #ff0000;
         }
         .footer {
             margin-top: 20px;
-            color: #888;
+            color: #aaaaaa;
             font-size: 14px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Lenna's Favorite Books</h1>
+        <h1>Lenna's Gothic Library</h1>
         <nav>
             <a href="index.html">Home</a> | <a href="blog.html">Blog</a> | <a href="music.html">Music</a> | <a href="movies.html">Movies</a> | <a href="about.html">About</a>
         </nav>
         <section>
-            <h2>Cyberpunk & Sci-Fi Must-Reads</h2>
+            <h2>Dark & Gothic Must-Reads</h2>
             <article>
-                <h3>📖 Neuromancer - William Gibson</h3>
-                <img src="images/neuromancer.jpg" alt="Neuromancer book cover" class="image-style">
+                <h3>📖 Dracula - Bram Stoker</h3>
+                <img src="https://media.giphy.com/media/upztYklL3VhNm/giphy.gif?cid=790b7611jtogqzu9hpjp69cab6f42jit1aaz0noy8vccxj20&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Dracula book cover" class="image-style">
             </article>
             <article>
-                <h3>📖 Snow Crash - Neal Stephenson</h3>
-                <img src="images/snow-crash.jpg" alt="Snow Crash book cover" class="image-style">
+                <h3>📖 The Picture of Dorian Gray - Oscar Wilde</h3>
+                <img src="https://media.giphy.com/media/jKOIYCID2wJFu/giphy.gif?cid=790b76113tbuddh8yvmhk4hgqzntjc2k5884vzjr00cmh9fm&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="The Picture of Dorian Gray book cover" class="image-style">
             </article>
             <article>
-                <h3>📖 Do Androids Dream of Electric Sheep? - Philip K. Dick</h3>
-                <img src="images/androids-dream.jpg" alt="Do Androids Dream of Electric Sheep? book cover" class="image-style">
+                <h3>📖 Frankenstein - Mary Shelley</h3>
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWNoNHhiODY3anczYjl3NDcwa3ZqZzE1cnhkN2o5N2E5MTd4NW9hcyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/iSBKHcm0qEmZ2/giphy.gif" alt="Frankenstein book cover" class="image-style">
             </article>
             <article>
-                <h3>📖 Altered Carbon - Richard K. Morgan</h3>
-                <img src="images/altered-carbon.jpg" alt="Altered Carbon book cover" class="image-style">
+                <h3>📖 We Have Always Lived in the Castle - Shirley Jackson</h3>
+                <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2Vqa3NoZ29uZHdnMm9wOHExczI5OWF2cnk2OGhvYzQ1MGN5NjIxbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L0KDjx1iwSL60/giphy.gif" alt="We Have Always Lived in the Castle book cover" class="image-style">
             </article>
         </section>
-        <div class="footer">© 2025 Lenna's Books - Stay inspired!</div>
+        <div class="footer">© 2025 Lenna's Gothic Library - Enter the shadows...</div>
     </div>
 </body>
 </html>
